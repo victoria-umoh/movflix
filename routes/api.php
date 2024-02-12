@@ -43,3 +43,15 @@ Route::post('/login', [FormController::class, 'signIn']);
 Route::post('/forgot-password', [FormController::class, 'forgotPassword']);
 
 Route::post('/reset-password', [FormController::class, 'resetPassword']);
+
+Route::get('/netflix-originals', [MoviesController::class, 'fetchNetflixOriginals']);
+
+Route::get('/trending-movies', [MoviesController::class, 'fetchTrending']);
+
+Route::get('/toprated-movies', [MoviesController::class, 'fetchTopRated']);
+Route::get('/action-movies', [MoviesController::class, 'fetchActionMovies']);
+Route::get('/comedy-movies', [MoviesController::class, 'fetchComedyMovies']);
+Route::get('/horror-movies', [MoviesController::class, 'fetchHorrorMovies']);
+Route::get('/romance-movies', [MoviesController::class, 'fetchRomanceMovies']);
+Route::get('/documentaries', [MoviesController::class, 'fetchDocumentaries']);
+

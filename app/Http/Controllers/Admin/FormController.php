@@ -138,10 +138,8 @@ public function signIn(Request $request)
                 'token' => $token,
                 'created_at' => now(),
             ]);
-
         return response()->json(['message' => 'Password reset email sent successfully']);
     }
-
 
 
         // Implement logic for resetting the password
